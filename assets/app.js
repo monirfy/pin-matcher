@@ -3,6 +3,7 @@ function generatePin() {
     document.querySelector('#typePin').value = '';
     const pinNumber = document.querySelector('.pin-num');
     pinNumber.textContent = getPin;
+    document.getElementById('bodySuccess').style.backgroundColor = '#10101b';
 }
 
 // Pin Verify
@@ -13,6 +14,7 @@ function verifyPin() {
     if (pinNumber === typedPin) {
         document.getElementById('typePin').classList = 'success';
         displayMessage('block', 'none');
+        document.getElementById('bodySuccess').style.backgroundColor = 'green';
     } else {
         displayMessage('none', 'block');
         let count = Number(document.getElementById('countTry').textContent) - 1;
