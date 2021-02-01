@@ -9,11 +9,11 @@ function generatePin() {
 function verifyPin() {
     const pinNumber = document.querySelector('.pin-num').textContent;
     const typedPin = document.querySelector('#typePin').value;
+
     if (pinNumber === typedPin) {
         document.getElementById('typePin').classList = 'success';
         displayMessage('block', 'none');
     } else {
-        document.getElementById('typePin').classList = 'error';
         displayMessage('none', 'block');
     }
 }
@@ -39,3 +39,8 @@ buttonContainer.addEventListener('click', function (event) {
         typedInput.value = typedInput.value + digit;
     }
 });
+
+function backSpace() {
+    var currentInput = document.getElementById('typePin').value;
+    document.getElementById('typePin').value = currentInput.substr(0, currentInput.length - 1);
+}

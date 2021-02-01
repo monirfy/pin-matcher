@@ -91,6 +91,10 @@ input[type='text']:focus {
     margin-right: -4px;
     border-radius: 10px;
     cursor: pointer;
+    transition: ease all 0.3s;
+}
+.button:hover {
+    background: #495bc3;
 }
 .blink-me {
     color: #e0b612;
@@ -102,6 +106,12 @@ input[type='text']:focus {
     border-radius: 5px;
     background: #495bc3;
     color: #fff;
+    border: 3px solid #39458c;
+    transition: ease all 0.3s;
+}
+.submit-btn:hover {
+    background-color: #39458c;
+    border-color: #495bc3;
 }
 .notify {
     color: #fff;
