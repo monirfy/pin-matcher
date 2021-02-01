@@ -7,8 +7,8 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
         <link rel="stylesheet" href="assets/style.css" />
     </head>
-    <body>
-        <div class="container">
+    <body class="body-ll">
+        <div id="generatePin" class="container">
             <div class="row">
                 <div class="col-md-6">
                     <div class="pin-generator half-width">
@@ -44,7 +44,7 @@
                                 </div>
                                 <div>
                                     <button onclick="verifyPin();" type="submit" class="submit-btn">Submit</button>
-                                    <!-- <p class="action-left">3 try left</p> -->
+                                    <p class="action-left"><span id="countTry">3</span> try left</p>
                                 </div>
                             </div>
                         </div>
@@ -56,6 +56,18 @@
                 <p id="pinSucess" class="notify">✅ Pin Matched... Secret door is opening for you</p>
             </div>
         </div>
+
+        <div id="tryblock" class="container text-center">
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <div class="pin-generator align-center">
+                        <h1 class="display-1 mb-5">Try Again</h1>
+                        <a class="generate-again submit-btn b-block" href="">Generate Pin</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <script src="assets/app.js"></script>
     </body>
 </html>

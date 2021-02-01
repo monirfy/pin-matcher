@@ -15,6 +15,13 @@ function verifyPin() {
         displayMessage('block', 'none');
     } else {
         displayMessage('none', 'block');
+        let count = Number(document.getElementById('countTry').textContent) - 1;
+        if (count > 0 || count == 0) {
+            document.getElementById('countTry').textContent = count;
+        } else {
+            document.getElementById('tryblock').style.display = 'block';
+            document.getElementById('generatePin').style.display = 'none';
+        }
     }
 }
 // Display Error Message

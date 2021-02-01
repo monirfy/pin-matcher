@@ -18,7 +18,8 @@ body {
 .generate-btn {
     margin-top: 140px;
     width: 180px;
-    padding: 50px;
+    height: 180px;
+    padding: 20px;
     border-radius: 50%;
     border: 8px solid #39458c;
     background-color: #495bc3;
@@ -27,6 +28,9 @@ body {
     font-size: 20px;
     text-align: center;
     transition: ease all 0.3s;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 .generate-btn:hover {
     background-color: #39458c;
@@ -112,6 +116,8 @@ input[type='text']:focus {
 .submit-btn:hover {
     background-color: #39458c;
     border-color: #495bc3;
+    text-decoration: none;
+    color: #fff;
 }
 .notify {
     color: #fff;
@@ -130,4 +136,15 @@ input[type='text']:focus {
 .action-left {
     color: #ff3c5f;
     margin-top: 10px;
+}
+
+#tryblock {
+    color: #fff;
+    display: none;
+}
+
+.pin-generator {
+    background: #222436;
+    padding: 100px 30px;
+    border-radius: 10px;
 }
