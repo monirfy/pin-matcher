@@ -14,7 +14,7 @@ function verifyPin() {
     if (pinNumber === typedPin) {
         document.getElementById('typePin').classList = 'success';
         displayMessage('block', 'none');
-        document.getElementById('bodySuccess').style.backgroundColor = 'green';
+        document.getElementById('bodySuccess').style.backgroundColor = '#4cd137';
     } else {
         displayMessage('none', 'block');
         let count = Number(document.getElementById('countTry').textContent) - 1;
